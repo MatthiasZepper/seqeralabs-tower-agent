@@ -72,7 +72,7 @@ import java.util.concurrent.TimeoutException;
         optionListHeading = "%nOptions:%n"
 )
 public class Agent implements Runnable {
-    public static final int MAX_WEBSOCKET_PAYLOAD_SIZE = 10485760;
+    public static final int MAX_WEBSOCKET_PAYLOAD_SIZE = 20971520; // 10485760;
     private static final Logger logger = LoggerFactory.getLogger(Agent.class);
 
     @Value("${tower.agent.heartbeat:`45s`}")
